@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "458383530012",
+    "firebase_url": "https://ads-and-money.firebaseio.com",
+    "project_id": "ads-and-money",
+    "storage_bucket": "ads-and-money.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458383530012:android:25ac47921a01fb14b0a7d9",
+        "android_client_info": {
+          "package_name": "com.uzb_androidchilar.adsandmoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458383530012-g6cuj0ge4vasud39n6vgdf456evu8eip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjiHF-9s5idpWsnFm0uNmkL05wJHphgeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458383530012-g6cuj0ge4vasud39n6vgdf456evu8eip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

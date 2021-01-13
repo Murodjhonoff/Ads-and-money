@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutReg"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".BioActivity">
+
+    <TextView
+        android:id="@+id/sign_in_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15sp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="end"
+        android:text="@string/sign_in"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="center_horizontal"
+        android:rotation="-10"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/for_logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/who_are_you"
+        android:textAlignment="center"
+        android:textColor="@color/for_reg_text"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/register_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/emailTIL">
+
+                <EditText
+                    android:id="@+id/firstNameEtBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/first_name"
+                    android:layout_marginBottom="2dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginStart="5dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/register_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/emailTIL1">
+
+                <EditText
+                    android:id="@+id/lastNameEtBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name"
+                    android:layout_marginBottom="2dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginStart="5dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            <EditText-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="5dp"-->
+            <!--                android:bufferType="spannable"-->
+            <!--                android:hint="@string/email"-->
+            <!--                android:inputType="textEmailAddress"-->
+            <!--                android:saveEnabled="true"-->
+            <!--                android:textColorHint="@color/bit_white"-->
+            <!--                android:textSize="18sp"-->
+            <!--                android:typeface="monospace" />-->
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textSize="20sp"
+            android:layout_marginStart="-10dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="casual"
+            android:textColor="@color/for_text"
+            android:text="Female"/>
+
+        <CheckBox
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textSize="20sp"
+            android:fontFamily="casual"
+            android:textColor="@color/for_text"
+            android:text="Male"/>
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/registerBtnOwn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/for_button"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

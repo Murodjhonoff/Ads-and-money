@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".EarnFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Earn"
+                    android:textColor="@color/for_text"
+                    android:textSize="25sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E2EEFA"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="10dp">
+
+                    <TextView
+                        android:id="@+id/input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/calendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end" />
+
+                    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="ca-app-pub-7935389987113395/9074284948">
+
+                    </com.google.android.gms.ads.AdView>
+
+                    <ProgressBar
+                        android:id="@+id/progress1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="20dp"/>
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/earn_button_back"
+                        android:fontFamily="monospace"
+                        android:text="Earn"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="0.5"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/banner_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/progress2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="20dp"/>
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:enabled="true"
+                        android:fontFamily="monospace"
+                        android:text="Earn"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" >
+
+
+                    </Button>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="0.5"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/interstitial_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/progress3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="20dp"/>
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/earn_button_back"
+                        android:fontFamily="monospace"
+                        android:text="Earn"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="0.5"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/rewarded_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/progress4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="20dp"/>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/earn_button_back"
+                        android:fontFamily="monospace"
+                        android:text="Earn"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="0.5"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/video_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/progress5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="20dp"/>
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/earn_button_back"
+                        android:fontFamily="monospace"
+                        android:text="Earn"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

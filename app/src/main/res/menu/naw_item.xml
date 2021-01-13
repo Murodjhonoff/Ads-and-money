@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        app:cnb_iconColor="@color/forbutton"
+        app:cnb_textColor="@color/forbutton"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/earn"
+        android:icon="@drawable/money"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        app:cnb_iconColor="@color/forbutton"
+        app:cnb_textColor="@color/forbutton"
+        android:title="Earn" />
+
+    <item
+        android:id="@+id/payment"
+        android:icon="@drawable/card"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        app:cnb_iconColor="@color/forbutton"
+        app:cnb_textColor="@color/forbutton"
+        android:title="Payment" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        app:cnb_iconColor="@color/forbutton"
+        app:cnb_textColor="@color/forbutton"
+        android:title="Settings" />
+
+
+
+
+
+</menu>

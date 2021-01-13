@@ -1,0 +1,3 @@
+include ':unity-ads'
+include ':app'
+rootProject.name = "Ads and money"

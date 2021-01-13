@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Ads and money</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="register_text">Create an account to start earning</string>
+    <string name="or">OR</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="signin">Sign in</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="next_step">Next step</string>
+    <string name="who_are_you">Who are you?</string>
+    <string name="registration">Registration</string>
+    <string name="estimated_earnings">Estimated earnings</string>
+    <string name="today_so_far">Today so far</string>
+    <string name="_0_00">$0.00</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="last_7_days">Last 7 days</string>
+    <string name="this_month">This month</string>
+    <string name="last_payment">Last payment</string>
+    <string name="payment_history">You didn\'t receive any payments yet to view the transaction history.</string>
+    <string name="dont_reached">You don\'t need to add a payment method until your earnings threshold has been reached.</string>
+    <string name="correct_payment">You didn\'t add any personal information to transfers. Add them to get the correct payments.</string>
+
+    <attr name="id" format="string">443684546958128_443721693621080</attr>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="payments_receiver">Payments receiver</string>
+    <string name="add_detailed_billing_information_to_receive_payments">Add detailed billing information to receive payments.</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="street">Street</string>
+    <string name="house_number">House number</string>
+    <string name="postal_code">Postal code</string>
+    <string name="city">City</string>
+    <string name="state_or_region">State or region</string>
+    <string name="activation_link">Go to your mail and click the activation link. If you didn\'t receive any messages from us, click on the button next to.</string>
+    <string name="send_activation_link">Send activation link</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="repeat_new_password">Repeat new password</string>
+    <string name="payment">Payment</string>
+    <string name="your_earnings">Your earnings</string>
+    <string name="contact_details">Contact details</string>
+    <string name="calling_code">Calling code</string>
+    <string name="phone_number_optional">Phone number(optional)</string>
+
+</resources>

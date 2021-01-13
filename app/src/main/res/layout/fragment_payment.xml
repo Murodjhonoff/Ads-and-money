@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeRefresh"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".PaymentFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/payment"
+                android:textColor="@color/for_text"
+                android:textSize="25sp" />
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+
+<!--            </RelativeLayout>-->
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E2EEFA"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/your_earnings"
+                        android:textStyle="bold"
+                        android:textColor="@color/for_text"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/earnReached"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:textAlignment="center"
+                        android:text="We'll send your payment once your payment threshold is reached"
+                        android:textColor="@color/for_text"
+                        android:textSize="14sp" />
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/statisticEarn"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp">
+
+                    </com.github.mikephil.charting.charts.PieChart>
+
+                    <TextView
+                        android:id="@+id/reachedForPayment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:paddingTop="10dp"
+                        android:layout_marginStart="15dp"
+                        android:text="You've reached x% of payment threshold"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:paddingBottom="20dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Payment threshold: $100"
+                        android:textSize="13sp"/>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transaction"
+                        android:textSize="20sp"
+                        android:textColor="@color/for_text"
+                        android:padding="20dp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/for_text"
+                        android:padding="20dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/payment_history"
+                        android:layout_marginBottom="60dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#C8C8C8"/>
+
+                    <TextView
+                        android:id="@+id/viewTransactions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:focusable="true"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:text="VIEW TRANSACTIONS"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#C8C8C8"
+                        android:textSize="14sp"
+                        android:enabled="false"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How you get paid"
+                        android:textSize="20sp"
+                        android:textColor="@color/for_text"
+                        android:padding="20dp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="60dp">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:src="@drawable/add_payment_card"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="30dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dont_reached"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/for_text"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#C8C8C8"/>
+
+                    <TextView
+                        android:id="@+id/add_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:focusable="true"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:text="ADD PAYMENT METHOD"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#C8C8C8"
+                        android:textSize="14sp"
+                        android:enabled="false"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment settings"
+                        android:textSize="20sp"
+                        android:textColor="@color/for_text"
+                        android:padding="20dp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/updateOwndata1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/for_text"
+                        android:paddingTop="20dp"
+                        android:paddingStart="20dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/correct_payment"/>
+
+                    <TextView
+                        android:id="@+id/updateOwndata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/for_text"
+                        android:paddingTop="20dp"
+                        android:paddingStart="20dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/correct_payment"/>
+
+                    <TextView
+                        android:id="@+id/updateOwndata2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/for_text"
+                        android:paddingStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+                        android:id="@+id/updateOwndata3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/for_text"
+                        android:paddingStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="60dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#C8C8C8"/>
+
+                    <TextView
+                        android:id="@+id/add_ownFillData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:focusable="true"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:text="MANAGE SETTINGS"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/for_text"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
